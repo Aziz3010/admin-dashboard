@@ -1,0 +1,23 @@
+.Home {
+    flex: 4;
+}
+
+.homeWidgets {
+    margin: 20px;
+    display: flex;
+}
+
+/* media */
+@media screen and (max-width: 963px) {
+    .homeWidgets {
+        margin: 20px 5px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .homeWidgets {
+        margin: 20px 15px;
+    }
+}

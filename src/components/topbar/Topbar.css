@@ -1,0 +1,126 @@
+.topbar {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    padding: 5px 0;
+}
+
+.topbarWrapper {
+    height: 100%;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Left side */
+
+.logo {
+    font-weight: bold;
+    font-size: 30px;
+    color: darkblue;
+    cursor: pointer;
+}
+
+/* Right side */
+
+.topRight {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Icons */
+
+.topbarIcons {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+    color: #555;
+    z-index: 1;
+}
+
+.topbarIcons:last-child {
+    margin-right: 0;
+}
+
+.topbarIcons i {
+    font-size: 25px;
+}
+
+/* badge */
+
+.topbarIcons .notiBadge {
+    position: absolute;
+    top: -10px;
+    left: 17px;
+    color: white;
+    border-radius: 50%;
+    min-width: 18px;
+    min-height: 18px;
+    padding: 2px;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    z-index: 2;
+}
+
+/* image */
+
+.topbarImg {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.p-img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* media */
+@media screen and (max-width: 375px) {
+    .logo {
+        font-size: 28px;
+    }
+    .topbarIcons {
+        width: 25px;
+        margin-right: 8px;
+    }
+    .topbarIcons .notiBadge {
+        left: 12px;
+        top: -8px;
+    }
+    .topbarImg {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 335px) {
+    .topbar {
+        height: 100px;
+    }
+    .topbarWrapper {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .topRight {
+        margin-top: 10px;
+    }
+    .topbarIcons {
+        width: 25px;
+        margin-right: 20px;
+    }
+}
